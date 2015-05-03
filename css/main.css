@@ -1,0 +1,153 @@
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: bottom;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+body, html {
+	height: 100%;
+	min-height: 100%;
+	background-color: white;
+}
+body {
+
+}
+.no-js {
+	padding-top: 106px;
+}
+h2 {
+	margin-top: 0;
+}
+.loading {
+	background: url('../img/ico_loading.gif') no-repeat center center;
+}
+/*section {
+	min-width: 960px;
+	opacity: 0;*/
+
+}
+.loaded section,
+.no-js section {
+	opacity: 1;
+	-webkit-transition: opacity 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out;
+	transition: opacity 300ms ease-out;
+}
+main {
+	overflow-x: hidden;
+}
+#preload {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+  clear: both;
+}
+
+.hsContainer {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+
+}
+
+.hsContent {
+	max-width: 700px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+}
+	.hsContent h2  {
+		color: #fff8de;
+		background-color: rgba(0,0,0,0.5);
+		padding: 10px 5px;
+		font-size: 35px;
+		line-height: 38px;
+		margin-bottom: 12px;
+	}
+	.hsContent p {
+		width: 400px;
+		color: #b2b2b2;
+	}
+	.hsContent a {
+		color: #b2b2b2;
+		text-decoration: underline;
+	}
+
+/* Slide 1 */
+#slide-1 {
+  height: 200px;
+}
+#slide-1 .bcg {background-image:url('../img/Computerhands.jpg')}
+#slide-1 .hsContent {
+	bottom: 200px;
+	top: auto;
+}
+
+/* Slide 2 */
+#slide-2 .bcg {background-image:url('../img/pitchday.jpeg')}
+#slide-2 .hsContent {
+	margin-left: 200px;
+	top: auto;
+}
+/*#slide-2 h2 {
+	position: fixed;
+	top: 70%;
+}*/
+
+/* Slide 3 */
+#slide-3 .hsContainer {
+  height: 200px;
+}
+#slide-3 .bcg {background-image:url('../img/newspaper.jpg');
+}
+#slide-3 .hsContent {
+	margin-left: -239px;
+  margin-top: 20px;
+}

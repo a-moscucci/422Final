@@ -1,0 +1,282 @@
+body { font-family: "Open Sans", sans-serif;
+font-size: 16px;
+line-height: 1.2;
+text-align: left;
+color: black;
+
+}
+#container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*#header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  overflow: visible!important;
+  padding: 0px 0px 0px 0px;
+  background-color: #fff;
+  z-index: 9998;
+}*/
+
+#innerHeader {
+  width: 1000px;
+  margin: 0 auto;
+}
+nav {
+  align: right;
+}
+nav ul li {
+  display: inline-block;
+  color: grey;
+  margin-top: 4em;
+
+}
+
+nav ul {
+  text-align: right;
+}
+a {
+  text-decoration: none;
+  color: grey;
+
+}
+
+nav a {
+  padding: 20px;
+}
+a:hover {
+  color: rgb(26,134,161);
+}
+
+
+#logo {
+  float: left;
+}
+
+h4 {
+  color: rgb(26,134,161);
+}
+
+
+#backgrounder {
+  /*-webkit-column-count: 2;*/
+  /*padding: 3em;*/
+  width: 300px;
+  height: 400px;
+  float: left;
+  margin-right: 1em;
+}
+
+#brochure {
+  width: 300px;
+  height: 550px;
+  float: left;
+  margin-right: 50px;
+}
+
+#newsletter {
+  width: 300px;
+  height: 400px;
+  float: right;
+  margin-left: 45px;
+}
+
+
+#preload img {
+  display: none;
+}
+
+
+#evite {
+  float: left;
+  height: 500px;
+  width: 400px;
+}
+
+#meetup {
+  margin-top: 10px;
+  float: right;
+  height: 500px;
+  width: 450px;
+  overflow: scroll;
+  border: solid 1px lightgrey;
+  padding: 0 5px;
+
+}
+
+#meetup:hover {
+  background-color: lightgrey;
+}
+
+#content {
+  height: 550px;
+
+}
+#newslogos {
+  float: left;
+  width: 300px;
+  margin: 0 50px 0 50px;
+}
+
+#newslogos img{
+  margin-top: 10px;
+}
+#footer {
+  background-color: rgb(31,31,31);
+  height: 200px;
+  padding-top: 50px;
+  padding-top:
+}
+
+#footer img {
+  margin-top: 50px;
+  margin-left: 50px;
+  padding-right: 20px;
+}
+
+#footer p {
+  color: grey;
+  margin-top: 50px;
+  margin-left: 55px;
+}
+
+#footer a {
+  color: grey;
+  padding-right: 20px;
+}
+#footer a:hover {
+  color: rgb(26,134,161);
+}
+
+#footer address {
+  color: grey;
+  clear: left;
+  text-align: center;
+}
+
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 300px;
+  height: 500px;
+	background: white;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	height: auto;
+  margin: 0 auto;
+	width: 100px;
+	opacity: 0.4;
+}
+
+.grid figure figcaption {
+	/*padding: 2em;*/
+	font-size: 1.25em;
+	/*-webkit-backface-visibility: hidden;
+	/*backface-visibility: hidden;*/
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+  bottom: 0;
+  right: 0;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h4,
+.grid figure p {
+	margin: 2px;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+
+figure.effect-sadie figcaption::before {
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	opacity: 0;
+	transform: translate3d(0,50%,0);
+}
+
+figure.effect-sadie h4 {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	width: 290px;
+	color: rgb(26,134,161);
+	transition: transform 0.35s, color 0.35s;
+	transform: translate3d(0,-50%,0);
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie p {
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-sadie p {
+  margin-bottom: 1em;
+  line-height: 1.5;
+	width: 300px;
+	opacity: 0;
+  color: black;
+	transform: translate3d(0,5px,0);
+}
+
+figure.effect-sadie p.p1 {
+  margin-top:3em;
+}
+figure.effect-sadie p a {
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+figure.effect-sadie p a{
+  -webkit-transform: translate3d(0,500%,0);
+	 transform: translate3d(0,400%,0);
+}
+figure.effect-sadie:hover h4 {
+	color: black;
+	transform: translate3d(0, 70px,0) translate3d(0, 150px,0);
+}
+
+figure.effect-sadie:hover figcaption::before ,
+figure.effect-sadie:hover p {
+	opacity: 1;
+	/*transform: translate3d(0,0,0);*/
+}
+figure.effect-sadie:hover img {
+  display: none;
+}
